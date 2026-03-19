@@ -4,7 +4,7 @@
 library(devtools)
 library(letsR)
 
-# Data load2562565
+# Data load
 
 data("prec")
 data("temp")
