@@ -5,13 +5,12 @@ library(devtools)
 library(letsR)
 
 # Data load
-
 data("prec")
 data("temp")
 prec <- unwrap(prec)
 temp <- unwrap(temp)
+envs <- lets.addvar(PAM_crop, c(prec, temp), onlyvar = TRUE)
 
-envs <- lets.addvar(PAM_crop, c(prec, temp), onlyvar = TRUE) 
 colnames(envs) <- c("Preciptation", "Temperature")
 wrld_simpl <- get(utils::data("wrld_simpl", package = "letsR"))
 PAM_crop42 <- lets.pamcrop(PAM_crop, vect(wrld_simpl))
@@ -47,4 +46,3 @@ str(envs)
 any(is.na(envs))
 sum(is.na(envs))
 colSums(is.na(envs))
-
