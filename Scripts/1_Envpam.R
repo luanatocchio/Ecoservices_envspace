@@ -66,7 +66,7 @@ for (i in seq_along(es_names)) {
     tibble(es = es_names[i], Abundance = abund_env[keep, 1], out[keep, -1]) %>%
     drop_na() %>% 
     # mutate(Frequency_log = log(Frequency)) %>%
-    select(c(1:3, 7, 15)) %>% # remove variables 
+    select(c(1:3, 7, 15)) %>% # Select variables 
     pivot_longer(3:5)
   
   # STATISTICAL MODEL
@@ -82,7 +82,7 @@ out <- do.call(bind_rows, data_plot)
 # Plot
 out %>%
   ggplot(aes(y = Abundance, x = value)) +
-  geom_smooth() +
+  geom_smooth(method = "gam") +
   #stat_smooth(method = "lm", formula = y ~ x + I(x^2), size = 1) +
   geom_point() +
   theme_bw() +
