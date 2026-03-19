@@ -1,8 +1,10 @@
-install.packages("devtools")
+# Packages
+# install.packages("devtools")
+# install_github("macroecology/letsR")
 library(devtools)
-install_github("macroecology/letsR")
 library(letsR)
 
+# Data load
 
 data("prec")
 data("temp")
