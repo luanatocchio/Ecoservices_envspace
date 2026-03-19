@@ -41,12 +41,12 @@ lets.plot.envpam(res,
 
 
 
-# Map ecossystem services -------------------------------------------------
+# Map ecosystem services -------------------------------------------------
 # Map Service 
 res_map <- lets.maplizer.env(res, 
                              y = ES$total, 
                              z = ES$species,
-                             func = sum)
+                             func = sum) # Change here for 
 
 # Relate to frequency
 out <- lets.envcells(res)
