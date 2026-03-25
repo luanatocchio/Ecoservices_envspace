@@ -63,7 +63,7 @@ for (i in seq_along(es_names)) {
   
   abund_env   <- res_map$Matrix_env[, -(1:3), drop = FALSE]
   data_plot[[i]] <- 
-    tibble(es = es_names[i], Abundance = abund_env[keep, 1], out[keep, -1]) %>%
+    tibble(es = es_names[i], Abundance = abund_env[, 1], out[keep, -1]) %>%
     drop_na() %>% 
     # mutate(Frequency_log = log(Frequency)) %>%
     select(c(1:3, 7, 15)) %>% # Select variables 
