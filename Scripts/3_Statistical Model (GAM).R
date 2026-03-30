@@ -86,3 +86,28 @@ print(final_table_results)
 # Saving the table 
 #write_csv(final_table_results, "Data\\Secondary Data\\Resultados_GAM_Capitulo2.csv")
 
+###################################################################################################
+
+# Residuals
+
+# Creating a PDF file to store residuals plots
+pdf("Figures/Residuals_diagnosis.pdf", width = 8, height = 8)
+
+# Dividing the page
+par(mfrow = c(2, 2))
+
+# Loop (11 services)
+for (i in 1:nrow(results_gam)) {
+  
+  # Plotting 4 graphs for each service
+  stats:::plot.lm(results_gam$model[[i]])
+  
+  # Placing the service name at the top of the page
+  mtext(results_gam$es[[i]], side = 3, line = -2, outer = TRUE, font = 2, cex = 1.2)
+}
+
+# Saving the PDF file
+dev.off()
+par(mfrow = c(1, 1)) 
+
+print("PDF successfully generated!")
