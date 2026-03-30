@@ -18,7 +18,7 @@ clim <- terra::subset(bio_data, c(1, 12))
 Brazil <- wrld_simpl[wrld_simpl$NAME == "Brazil", ]  # Brazil (polygon)
 clim_br0 <- terra::crop(clim, Brazil)
 clim_br <- terra::mask(clim_br0, Brazil)
-### Log, because effects of preciptation tend to be log scale
+### Log, because effects of precipitation tend to be log scale
 v <- values(clim_br)[, 2]
 logv <- sqrt(v)
 values(clim_br)[, 2] <-  ifelse(is.infinite(logv), NA, logv)
@@ -33,7 +33,7 @@ ES$total <- rowSums(ES[, -1])
 # Environment PAM ---------------------------------------------------------
 # Add variables to pam
 envs <- lets.addvar(pam_mammals, clim_br, onlyvar = TRUE)
-colnames(envs) <- c("Temperature", "Preciptation (Log)")
+colnames(envs) <- c("Temperature", "Precipitation (Log)")
 
 # Create Env pam
 res <- lets.envpam(pam_mammals, envs,   n_bins = 30)

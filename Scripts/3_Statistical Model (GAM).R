@@ -17,7 +17,7 @@ for (i in seq_along(es_names)) {
   temp_climate <- tibble(
     es = es_names[i],
     Temperature = res_map$Matrix_env[, 2],
-    `Preciptation (Log)` = res_map$Matrix_env[, 3],
+    `Precipitation (Log)` = res_map$Matrix_env[, 3],
     Abundance = res_map$Matrix_env[, 4]
   )
   
@@ -42,7 +42,7 @@ results_gam <- out_wide %>%
   nest() %>%
   mutate(
     # Run the multivariate GAM for the 3 independent variables.
-    model = map(data, ~ gam(Abundance ~ s(Temperature) + s(`Preciptation (Log)`) + s(Frequency), data = .x)),
+    model = map(data, ~ gam(Abundance ~ s(Temperature) + s(`Precipitation (Log)`) + s(Frequency), data = .x)),
     
     # Extracting the Pseudo-R2 (Deviance Explained) to assess the power of the model
     deviance_explained = map_dbl(model, ~ 1 - (.x$deviance / .x$null.deviance))
