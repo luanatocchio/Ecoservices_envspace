@@ -15,6 +15,4 @@ Data/Primary Data/SA/
 
 # Ignore R environment and history files
 *.RData
-
-*.RData
-!Data\\Secondary Data\\pam_SA.RData
+!Data/Secondary Data/pam_SA.RData
