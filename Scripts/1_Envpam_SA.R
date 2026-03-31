@@ -46,56 +46,11 @@ plot(pam_mammals_SA)
 
 ############################################################################################################
 
-# Creating vale species
+# Loading species data
 
-# Reading the shapefile (IUCN´s polygons)
-
-mammals <- st_read("Data\\Primary Data\\mammals_polygons\\data_0.shp")
-
-#save(mammals, file = "Data\\Primary Data\\mammals.RData")
-
-# Reading the csv file (dataset from Vale et al. 2023)
-
-vale_csv <- read.csv("Data\\Primary Data\\Table_Vale.csv")
-
-# Creating vectors with species names for both files
-
-iucn_species <- mammals$SCI_NAME
-vale_species <- vale_csv$species
-
-iucn_species_clean <- unique(iucn_species)
-
-# Investigating differences in species names between the two vectors
-
-differences_iucn_species_clean_vale_species <- setdiff(iucn_species_clean, vale_species)
-differences_vale_species_iucn_species_clean <- setdiff(vale_species, iucn_species_clean)
-
-# Removing aquatic mammals (exclusively aquatic) from the analysis:
-
-remove_species <- c("Trichechus inunguis", "Pteronura brasiliensis", "Lontra longicaudis", "Arctocephalus australis", "Arctocephalus tropicalis", "Eubalaena australis", "Megaptera novaeangliae", "Sotalia guianensis", "Stenella longirostris", "Trichechus manatus", "Tursiops truncatus", "Inia geoffrensis", "Sotalia fluviatilis", "Balaenoptera acutorostrata", "Balaenoptera bonaerensis", "Balaenoptera borealis", "Balaenoptera edeni", "Balaenoptera musculus", "Balaenoptera omurai", "Balaenoptera physalus", "Berardius arnuxii", "Cephalorhynchus commersonii", "Delphinus delphis", "Feresa attenuata", "Globicephala macrorhynchus", "Globicephala melas", "Grampus griseus", "Hydrurga leptonyx", "Hyperoodon planifrons", "Kogia breviceps", "Kogia sima", "Lagenodelphis hosei", "Lissodelphis peronii", "Lobodon carcinophaga", "Mesoplodon densirostris", "Mesoplodon europaeus", "Mesoplodon grayi", "Mesoplodon layardii", "Mesoplodon mirus", "Mirounga leonina", "Orcinus orca", "Otaria byronia", "Peponocephala electra", "Phocoena dioptrica", "Phocoena spinipinnis", "Physeter macrocephalus", "Pontoporia blainvillei", "Pseudorca crassidens", "Stenella attenuata", "Stenella clymene", "Stenella coeruleoalba", "Stenella frontalis", "Steno bredanensis", "Ziphius cavirostris")
-vale_species <- vale_species[!vale_species %in% remove_species]
-
-# Removing DD (data deficient), extinct species (that are not on IUCN´s list) and species without polygons for Brazil:
-
-remove_species_2 <- c("Noronhomys vespuccii", "Makalata obscura", "Notiomys edwardsii", "Peropteryx trinitatis", "Ctenomys dorsalis", "Histiotus laephotis")
-vale_species <- vale_species[!vale_species %in% remove_species_2]
-
-# Uniformizing the species name Diaemus youngii, leaving it in accordance with IUCN
-
-vale_species <- gsub("Diaemus youngi", "Diaemus youngii", vale_species)
-str(vale_species)
-
-# Saving vale_species
-
-#save(vale_species, file = "Data\\Secondary Data\\vale_species_last.RData")
-
-load("Data\\Secondary Data\\vale_species_last.RData")
+vale_species <- read.csv("Data/Primary Data/vale_species_last.csv")
 
 #str(vale_species)
-
-# Saving in csv format
-  ##vale_species_df <- data.frame(especies = vale_species)
-  ##write.csv(vale_species_df, file = "Data\\Secondary Data\\vale_species_last.csv", row.names = FALSE)
 
 ########################################################################################################################################################################
 
@@ -117,7 +72,6 @@ pam_mammals_sub_SA <- lets.load(file = "Data\\Secondary Data\\pam_mammals_sub_SA
 
 ################################################################################################################################
 
-
 ## Ecossystem service data
 ES_SA <- read.csv("Data/Primary Data/ES_11_TraitsNOVO.csv")
 ES_SA$total <- rowSums(ES_SA[, -1])
@@ -131,8 +85,6 @@ colnames(envs_SA) <- c("Temperature", "Precipitation (Log)")
 res_SA <- lets.envpam(pam_mammals_sub_SA, envs_SA,   n_bins = 30)
 lets.plot.envpam(res_SA,
                  world = TRUE)
-
-
 
 # Map ecosystem services -------------------------------------------------
 # Map Service 
