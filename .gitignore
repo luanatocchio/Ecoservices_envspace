@@ -5,4 +5,13 @@
 ".Rproj.user/" 
 ".Rhistory" 
 .Rproj.user/
-Data/
+
+# Ignorar pastas específicas com arquivos pesados (shapefiles, rasters)
+Data/Primary Data/worldclim/
+Data/Primary Data/_worldclim/
+Data/Primary Data/_worldclim-Meu_Dell/
+Data/Primary Data/mammals_polygons/
+Data/Primary Data/SA/
+
+# Ignorar arquivos de ambiente e histórico do R
+*.RData
