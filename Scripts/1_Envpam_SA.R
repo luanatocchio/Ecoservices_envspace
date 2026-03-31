@@ -9,6 +9,7 @@ library(terra)
 library(geodata)
 library(tidyverse)
 library(gam)
+library(sf)
 
 # Load Data ---------------------------------------------------------------
 ## Env data
@@ -48,7 +49,7 @@ plot(pam_mammals_SA)
 
 # Loading species data
 
-vale_species <- read.csv("Data/Primary Data/vale_species_last.csv")
+vale_species <- read.csv("Data/Primary Data/vale_species_last.csv")[[1]]
 
 #str(vale_species)
 
