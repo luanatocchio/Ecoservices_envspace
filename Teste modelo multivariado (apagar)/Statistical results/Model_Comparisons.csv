@@ -1,0 +1,73 @@
+es_SA,Model,AIC,Deviance_Explained
+carrion_control,Full,1366.4,89.11
+carrion_control,No Temp,1367.1,88.54
+carrion_control,No FWD,1377.2,88.21
+carrion_control,No Precip,1391,86.64
+carrion_control,No Isolation,1438,85.07
+carrion_control,Null,2968.6,0
+cultural_service_charismatic_species,Full,2580,93.68
+cultural_service_charismatic_species,No FWD,2712.5,92.47
+cultural_service_charismatic_species,No Isolation,2919.6,90.7
+cultural_service_charismatic_species,No Temp,2941.3,90.44
+cultural_service_charismatic_species,No Precip,3001.4,89.97
+cultural_service_charismatic_species,Null,13644.4,0
+disease_sentinelling,Full,2205.8,92
+disease_sentinelling,No FWD,2257.3,91.12
+disease_sentinelling,No Temp,2277.3,90.79
+disease_sentinelling,No Precip,2392.9,89.06
+disease_sentinelling,No Isolation,2411.2,89.09
+disease_sentinelling,Null,8927.5,0
+ecosystem_engineering,Full,995.7,91.96
+ecosystem_engineering,No FWD,998.6,91.59
+ecosystem_engineering,No Temp,999.8,91.65
+ecosystem_engineering,No Isolation,1015.7,90.88
+ecosystem_engineering,No Precip,1077.7,86.85
+ecosystem_engineering,Null,2717.9,0
+ecotourism,Full,1224.6,90.35
+ecotourism,No Temp,1228.5,89.87
+ecotourism,No FWD,1247.5,88.24
+ecotourism,No Isolation,1249.1,88.18
+ecotourism,No Precip,1250.7,87.47
+ecotourism,Null,2188.2,0
+nutrient_transporting_horizontal_and_vertical,Full,1668.6,93.39
+nutrient_transporting_horizontal_and_vertical,No Temp,1696.4,92.6
+nutrient_transporting_horizontal_and_vertical,No FWD,1698.9,92.75
+nutrient_transporting_horizontal_and_vertical,No Isolation,1757.5,91.13
+nutrient_transporting_horizontal_and_vertical,No Precip,1775.4,90.5
+nutrient_transporting_horizontal_and_vertical,Null,5160.7,0
+pest_and_disease_control,Full,3000.9,89.29
+pest_and_disease_control,No FWD,3036.5,88.93
+pest_and_disease_control,No Temp,3158.7,87.84
+pest_and_disease_control,No Isolation,3365.2,86.14
+pest_and_disease_control,No Precip,3473.4,85.21
+pest_and_disease_control,Null,13557.4,0
+pollination,Full,2228.9,84.45
+pollination,No FWD,2375.5,81.65
+pollination,No Temp,2429.1,80.66
+pollination,No Isolation,2494.4,79.71
+pollination,No Precip,2735.6,75.58
+pollination,Null,7126.7,0
+rodent_control,Full,1547.8,86.34
+rodent_control,No Temp,1557.2,84.98
+rodent_control,No FWD,1582.6,83.41
+rodent_control,No Isolation,1597.6,83.1
+rodent_control,No Precip,1612.7,80.64
+rodent_control,Null,2796.1,0
+seed_dispersal,Full,4329.7,90
+seed_dispersal,No FWD,4552.4,89.03
+seed_dispersal,No Temp,4929.8,87.51
+seed_dispersal,No Isolation,5150,86.63
+seed_dispersal,No Precip,6037.6,83.04
+seed_dispersal,Null,26575.7,0
+top_down_regulation,No Temp,937.8,75.53
+top_down_regulation,No Isolation,938.3,75.33
+top_down_regulation,Full,938.9,76.26
+top_down_regulation,No Precip,942,71.25
+top_down_regulation,No FWD,949.8,70.25
+top_down_regulation,Null,1047.8,0
+total,Full,7781.2,92.16
+total,No FWD,8240.2,91.46
+total,No Temp,8971.1,90.38
+total,No Isolation,10028.6,88.82
+total,No Precip,10545.2,88.06
+total,Null,70218.8,0

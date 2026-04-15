@@ -1,0 +1,13 @@
+es_SA,Quality,Deviance_Explained,R_sq,AIC,GCV,Dispersion_Ratio,Significant_Variables,NonLinear_Variables,Residual_Quality,Prop_Residuals_Within_2SD,n
+cultural_service_charismatic_species,Excellent,93.68,0.921,2580,1.1745,2.27,"Isolation_Mean, Frequency_Weighted_Distance, Temperature, Precipitation_Log","Isolation_Mean, Frequency_Weighted_Distance, Temperature, Precipitation_Log",Poor,84.8,375
+nutrient_transporting_horizontal_and_vertical,Excellent,93.39,0.932,1668.6,-0.2412,0.75,"Isolation_Mean, Frequency_Weighted_Distance, Temperature, Precipitation_Log","Isolation_Mean, Frequency_Weighted_Distance, Precipitation_Log",Good,97.9,375
+total,Excellent,92.16,0.926,7781.2,13.3737,15.87,"Isolation_Mean, Frequency_Weighted_Distance, Temperature, Precipitation_Log","Isolation_Mean, Frequency_Weighted_Distance, Temperature, Precipitation_Log",Poor,46.7,375
+disease_sentinelling,Excellent,92,0.943,2205.8,0.7171,1.57,"Isolation_Mean, Frequency_Weighted_Distance, Temperature, Precipitation_Log","Isolation_Mean, Frequency_Weighted_Distance, Temperature, Precipitation_Log",Poor,87.5,375
+ecosystem_engineering,Excellent,91.96,0.932,995.7,-0.4938,0.48,"Temperature, Isolation_Mean, Precipitation_Log","Temperature, Isolation_Mean, Precipitation_Log",Acceptable,99.7,375
+ecotourism,Excellent,90.35,0.911,1224.6,-0.6504,0.29,"Temperature, Isolation_Mean, Frequency_Weighted_Distance, Precipitation_Log","Isolation_Mean, Frequency_Weighted_Distance, Precipitation_Log",Good,100,375
+seed_dispersal,Excellent,90,0.912,4329.7,5.7906,7.35,"Isolation_Mean, Frequency_Weighted_Distance, Temperature, Precipitation_Log","Isolation_Mean, Frequency_Weighted_Distance, Temperature, Precipitation_Log",Poor,62.4,375
+pest_and_disease_control,Excellent,89.29,0.918,3000.9,2.5459,3.74,"Isolation_Mean, Frequency_Weighted_Distance, Temperature, Precipitation_Log","Isolation_Mean, Frequency_Weighted_Distance, Temperature, Precipitation_Log",Poor,71.7,375
+carrion_control,Excellent,89.11,0.906,1366.4,-0.3438,0.54,"Frequency_Weighted_Distance, Isolation_Mean, Precipitation_Log","Temperature, Frequency_Weighted_Distance, Isolation_Mean, Precipitation_Log",Good,99.7,375
+rodent_control,Excellent,86.34,0.895,1547.8,-0.3491,0.53,"Temperature, Isolation_Mean, Frequency_Weighted_Distance, Precipitation_Log","Temperature, Isolation_Mean, Frequency_Weighted_Distance, Precipitation_Log",Good,99.5,375
+pollination,Excellent,84.45,0.873,2228.9,1.6009,2.4,"Isolation_Mean, Frequency_Weighted_Distance, Temperature, Precipitation_Log","Isolation_Mean, Frequency_Weighted_Distance, Temperature, Precipitation_Log",Poor,81.1,375
+top_down_regulation,Excellent,76.26,0.796,938.9,-0.857,0.09,Frequency_Weighted_Distance,,Good,100,375

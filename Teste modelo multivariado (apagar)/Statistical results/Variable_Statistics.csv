@@ -1,0 +1,49 @@
+es_SA,Variable,edf,Ref_df,F_statistic,p_value,Significance,Effect_Type
+carrion_control,Temperature,3.81,4.924648630929069,5.129,0.4054,ns,Strongly Non-linear
+carrion_control,Frequency_Weighted_Distance,5.82,6.905892676183138,23.596,0.0011,**,Strongly Non-linear
+carrion_control,Isolation_Mean,4.86,5.878583459354149,77.43,0,***,Strongly Non-linear
+carrion_control,Precipitation_Log,7,7.954757288633553,39.88,-0,***,Strongly Non-linear
+cultural_service_charismatic_species,Isolation_Mean,7.83,8.607966960011474,332.631,0,***,Strongly Non-linear
+cultural_service_charismatic_species,Frequency_Weighted_Distance,6.26,7.430959168473294,139.759,0,***,Strongly Non-linear
+cultural_service_charismatic_species,Temperature,8.44,8.781303431676426,366.947,0,***,Strongly Non-linear
+cultural_service_charismatic_species,Precipitation_Log,8.64,8.947659346835522,438.575,0,***,Strongly Non-linear
+disease_sentinelling,Isolation_Mean,5.5,6.579934246191188,205.579,0,***,Strongly Non-linear
+disease_sentinelling,Frequency_Weighted_Distance,6.26,7.362835089018714,68.413,0,***,Strongly Non-linear
+disease_sentinelling,Temperature,6.12,7.187798008347824,79.201,0,***,Strongly Non-linear
+disease_sentinelling,Precipitation_Log,8.62,8.93210592517047,218.097,0,***,Strongly Non-linear
+ecosystem_engineering,Frequency_Weighted_Distance,2.31,2.8724897960656532,5.067,0.2158,ns,Weakly Non-linear
+ecosystem_engineering,Temperature,4.89,5.786996903535578,17.441,0.0073,**,Strongly Non-linear
+ecosystem_engineering,Isolation_Mean,3.81,4.686156459846292,26.628,1e-4,***,Strongly Non-linear
+ecosystem_engineering,Precipitation_Log,6.14,7.144587750951909,78.771,0,***,Strongly Non-linear
+ecotourism,Temperature,1,1.0005956925482142,6.666,0.0098,**,Linear
+ecotourism,Isolation_Mean,3.79,4.648601218891665,30.529,0,***,Strongly Non-linear
+ecotourism,Frequency_Weighted_Distance,3.78,4.697405892153666,74.372,0,***,Strongly Non-linear
+ecotourism,Precipitation_Log,3.24,4.149617139254062,31.537,0,***,Strongly Non-linear
+nutrient_transporting_horizontal_and_vertical,Isolation_Mean,4.64,5.637450185235089,111.868,0,***,Strongly Non-linear
+nutrient_transporting_horizontal_and_vertical,Frequency_Weighted_Distance,4.95,6.0179539634111405,244.193,0,***,Strongly Non-linear
+nutrient_transporting_horizontal_and_vertical,Temperature,1,1.0002137561287587,31.157,0,***,Linear
+nutrient_transporting_horizontal_and_vertical,Precipitation_Log,6.01,7.081279927827849,121.374,0,***,Strongly Non-linear
+pest_and_disease_control,Isolation_Mean,7.12,8.109150201672612,365.302,0,***,Strongly Non-linear
+pest_and_disease_control,Frequency_Weighted_Distance,6.68,7.691805085755267,49.089,0,***,Strongly Non-linear
+pest_and_disease_control,Temperature,5.39,6.557937988643984,168.544,0,***,Strongly Non-linear
+pest_and_disease_control,Precipitation_Log,8.51,8.896338382668484,516.173,0,***,Strongly Non-linear
+pollination,Isolation_Mean,6.87,7.899415296292874,256.232,0,***,Strongly Non-linear
+pollination,Frequency_Weighted_Distance,6.24,7.1581533637630725,105.442,0,***,Strongly Non-linear
+pollination,Temperature,8.11,8.448097821343927,189.435,0,***,Strongly Non-linear
+pollination,Precipitation_Log,9,8.999860621410216,459.797,0,***,Strongly Non-linear
+rodent_control,Temperature,5.14,6.315538256961201,16.519,0.0139,*,Strongly Non-linear
+rodent_control,Isolation_Mean,3.31,4.117332484901064,59.705,0,***,Strongly Non-linear
+rodent_control,Frequency_Weighted_Distance,3.87,4.891829160893273,43.417,0,***,Strongly Non-linear
+rodent_control,Precipitation_Log,6.96,7.954147254926958,78.932,0,***,Strongly Non-linear
+seed_dispersal,Isolation_Mean,7.84,8.614321695671242,763.422,0,***,Strongly Non-linear
+seed_dispersal,Frequency_Weighted_Distance,8.49,8.871726464779362,206.601,0,***,Strongly Non-linear
+seed_dispersal,Temperature,7.64,8.204684806144284,588.655,0,***,Strongly Non-linear
+seed_dispersal,Precipitation_Log,8.96,8.998196373170687,1612.288,0,***,Strongly Non-linear
+top_down_regulation,Temperature,1,1.000117596882028,0.471,0.4923,ns,Linear
+top_down_regulation,Isolation_Mean,1,1.000091715083983,1.508,0.2195,ns,Linear
+top_down_regulation,Precipitation_Log,2.5,3.280362720413952,7.214,0.1012,ns,Weakly Non-linear
+top_down_regulation,Frequency_Weighted_Distance,2.26,2.8584521915193144,21.729,1e-4,***,Weakly Non-linear
+total,Isolation_Mean,8.66,8.96217891240282,2133.18,0,***,Strongly Non-linear
+total,Frequency_Weighted_Distance,8.92,8.990395582549136,477.856,0,***,Strongly Non-linear
+total,Temperature,8,8.527744100586608,1197.793,0,***,Strongly Non-linear
+total,Precipitation_Log,8.93,8.997660543318805,2950.59,0,***,Strongly Non-linear
