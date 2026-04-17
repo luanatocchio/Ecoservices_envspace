@@ -9,7 +9,7 @@ library(geodata)
 library(tidyverse)
 library(sf)
 library(broom)
-library(mgcv)  ]
+library(mgcv)  
 
 # Load Data ---------------------------------------------------------------
 ## Env data (WorldClim)
