@@ -12,8 +12,10 @@ Data/Primary Data/_worldclim/
 Data/Primary Data/_worldclim-Meu_Dell/
 Data/Primary Data/mammals_polygons/
 Data/Primary Data/SA/
+Data/
+Figures/Relationships_env_SA/Es_env_relationships_ALL_VARS.tif
 
 # Ignore R environment and history files
 *.RData
-!Data/Secondary Data/pam_SA.RData
-Figures/Relationships_env_SA/Es_env_relationships_ALL_VARS.tif
+
+
