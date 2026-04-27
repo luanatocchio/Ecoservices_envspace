@@ -16,3 +16,4 @@ Data/Primary Data/SA/
 # Ignore R environment and history files
 *.RData
 !Data/Secondary Data/pam_SA.RData
+Figures/Relationships_env_SA/Es_env_relationships_ALL_VARS.tif
